@@ -1,0 +1,19 @@
+# 1
+ Traverse the array of integers num and make a presence dict indicating
+ the presence of the number, if the counterpart is already present, then
+ we return the two indexes
+
+# 2
+ iterate l1 and l2 simultaneously , using pointer p1 and p2 respectively
+ if there is no element in any one of the list then imagine a 0
+ add the individual numbers and if carry is found use the carry
+ once both p1 and p2 have reached end , then stop
+
+# 3
+ Sliding Window
+ with 2 pointers , left and right , we look at a substring and see if it has
+ repeats
+ when there is a repeat, then we move the left by one
+ when there is no repeat , we move the right
+ we also check a substring only if it is longer than what already have
+

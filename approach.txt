@@ -17,3 +17,14 @@
  when there is no repeat , we move the right
  we also check a substring only if it is longer than what already have
 
+# 4
+merge the 2 sorted lists and give out the median
+Merging strategy is to have 3 pointers p1,p2,p3 for nums1,nums2 and rhe result
+nums3. An element is added into nums3 from nums1, if nums1 element is <= nums2
+element, otherwise it adds nums2 element.
+After we reach the end of one of the list , we keep adding to nums3 from the 
+other list
+The median is the value of middle element of the array
+in case the length is even , then it is the average of 2 middle elements
+[1, 5, 6, 7, 9 ] , median=6
+[1, 5, 6, 7, 9, 15] , median = (6 + 7)/2 = 6.5

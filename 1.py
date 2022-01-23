@@ -4,26 +4,17 @@
 # we return the two indexes
 
 
-class Solution(object):
-
-    def twoSum(self, nums, target):
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
         presence = {}
 
-        index = 0
-        x = 0
-        y = 0
-
-        for i in nums:
-            counterpart = target - i
+        for index, val in enumerate(nums):
+            counterpart = target - val
             if counterpart in presence:
                 x = presence[counterpart]
                 y = index
                 return x, y
-            if i not in presence:
-                presence[i] = index
-            index += 1
-
-        return x, y
+            presence[val] = index
 
 if __name__ == "__main__":
     m=Solution()
